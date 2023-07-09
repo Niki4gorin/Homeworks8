@@ -11,10 +11,10 @@
 
 // int[,] Create2DArray(int rows, int columns, int minValue, int maxValue)
 // {
-//     int[,] array = new int[rows, columns]; //строки и столбцы
-//     for (int i = 0; i < rows; i++)  //движемся по строчкам
+//     int[,] array = new int[rows, columns]; 
+//     for (int i = 0; i < rows; i++)  
 //     {
-//         for (int j = 0; j < columns; j++)  //движемся по столбцам
+//         for (int j = 0; j < columns; j++) 
 //         {
 //             array[i, j] = new Random().Next(minValue, maxValue + 1);
 //         }
@@ -22,7 +22,7 @@
 //     return array;
 // }
 
-// void SortToLower(int[,] array)
+// int[,] SortToLower(int[,] array)
 // {
 //     for (int i = 0; i < array.GetLength(0); i++)
 //     {
@@ -39,6 +39,7 @@
 //             }
 //         }
 //     }
+//     return array;
 // }
 
 // void Print2DArray(int[,] array)
@@ -64,8 +65,8 @@
 // int maxValue = Convert.ToInt32(Console.ReadLine());
 
 // int[,] myArray = Create2DArray(rows, columns, minValue, maxValue);
-// SortToLower(myArray);
 // Print2DArray(myArray);
+// Print2DArray(SortToLower(myArray));
 
 
 
